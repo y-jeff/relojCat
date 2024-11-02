@@ -41,10 +41,10 @@ function actualizarReloj() {
     imagenLolcat.src = "images/Batcat.jpeg";
   } else if (horaActual >= 3 && horaActual < 5) {
     mensajeTiempo.innerText = "¿Qué haces despierto? ¡Ve a dormir!";
-    imagenLolcat.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0cuaCtbhL5ZX4f0cAEWbhEzZzDUDXmyFBIQ&s";
+    imagenLolcat.src = "images/gosleep.jpg";
   } else if (horaActual >= 6 && horaActual < 12) {
     mensajeTiempo.innerText = "¡Buenos días!";
-    imagenLolcat.src = "https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg";
+    imagenLolcat.src = "images/buenosdias.jpg";
   } else if (horaActual >= 12 && horaActual < 15) {
     mensajeTiempo.innerText = "¡Es hora de almorzar!";
     imagenLolcat.src = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat2.jpg";
