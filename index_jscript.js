@@ -32,16 +32,16 @@ function actualizarReloj() {
 
   mostrarHoraYFechaActual();
 
-  // Verifica si es la última hora del año
-  if (mesActual === 11 && diaActual === 31 && horaActual === 23) {
+  // Verifica si es el 1 de enero para Año Nuevo
+  if (mesActual === 0 && diaActual === 1) {
     mensajeTiempo.innerText = "¡Feliz Año Nuevo!";
     imagenLolcat.src = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/partyTime.jpg";
-  } else if (horaActual === 0 && minutosActuales === 0) {
+  } else if (horaActual >= 0 && horaActual < 3) {
     mensajeTiempo.innerText = "Es hora de... ser el héroe que esta ciudad necesita";
     imagenLolcat.src = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/batmanCat.jpg";
-  } else if (horaActual >= 5 && horaActual < 6) {
+  } else if (horaActual >= 3 && horaActual < 5) {
     mensajeTiempo.innerText = "¿Qué haces despierto? ¡Ve a dormir!";
-    imagenLolcat.src = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat1.jpg";
+    imagenLolcat.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0cuaCtbhL5ZX4f0cAEWbhEzZzDUDXmyFBIQ&s";
   } else if (horaActual >= 6 && horaActual < 12) {
     mensajeTiempo.innerText = "¡Buenos días!";
     imagenLolcat.src = "https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg";
@@ -54,7 +54,7 @@ function actualizarReloj() {
   } else if (horaActual >= 18 && horaActual < 22) {
     mensajeTiempo.innerText = "¡Buenas tardes!";
     imagenLolcat.src = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg";
-  } else if (horaActual >= 22 || horaActual < 5) {
+  } else if (horaActual >= 22 || horaActual < 3) {
     mensajeTiempo.innerText = "¡Buenas noches!";
     imagenLolcat.src = "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cat_sleep.jpg";
   } else {
