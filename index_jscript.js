@@ -38,7 +38,7 @@ function actualizarReloj() {
     imagenLolcat.src = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/partyTime.jpg";
   } else if (horaActual >= 0 && horaActual < 3) {
     mensajeTiempo.innerText = "Es hora de... ser el héroe que esta ciudad necesita";
-    imagenLolcat.src = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/batmanCat.jpg";
+    imagenLolcat.src = "images/batman.jpg";
   } else if (horaActual >= 3 && horaActual < 5) {
     mensajeTiempo.innerText = "¿Qué haces despierto? ¡Ve a dormir!";
     imagenLolcat.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0cuaCtbhL5ZX4f0cAEWbhEzZzDUDXmyFBIQ&s";
